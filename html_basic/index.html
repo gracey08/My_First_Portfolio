@@ -3,59 +3,121 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Make a cool first webpage</title>
+    <style>
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+        .back-home {
+            margin-top: 20px;
+            display: inline-block;
+            padding: 10px 15px;
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .back-home:hover {
+            background-color: #0056b3;
+        }
+        aside {
+            background-color: #f9f9f9;
+            border-left: 4px solid #007bff;
+            padding: 15px;
+            margin: 20px 0;
+            font-style: italic;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            gap: 15px;
+        }
+        nav ul li {
+            display: inline;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #007bff;
+            font-weight: bold;
+        }
+        nav ul li a:hover {
+            color: #0056b3;
+        }
+        footer {
+            background-color: #f4f4f4;
+            text-align: center;
+            padding: 15px;
+            margin-top: 20px;
+            border-top: 2px solid #007bff;
+        }
+        footer a {
+            text-decoration: none;
+            color: #007bff;
+        }
+        footer a:hover {
+            color: #0056b3;
+        }
+    </style>
 </head>
+
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Homepage</a></li>
-                <li><a href="tweets.html">Tweetspage</a></li>
-                <li><a href="base_index.html">Basepage</a></li>
-            </ul>
-        </nav> 
-    </header>
-    <main>
-        <h1> WHAT IS HTML</h1>
-        <p>An HTML document is a text file that contains structured code which tells browsers how to display a webpage.</p>
 
-        <article>
-            <h2>Structure of an HTML Document</h2>
-            <p>HTML document consists of specifics tags that form the skeleton of the page.</p>
-            
-            <h2>Embedded Tweet</h2>
-            <p>Below is an example of an embedded tweet:</p>
-            <blockquote class="twitter-tweet">
-                <p lang="en" dir="ltr">Baba God wetin dey sup? 🤦‍♂️ <a href="https://t.co/CqeaGIBbDR">pic.twitter.com/CqeaGIBbDR</a></p>&mdash; Adebayo Jerry (@jerrykoko2024) <a href="https://twitter.com/jerrykoko2024/status/1867101663502512470?ref_src=twsrc%5Etfw">December 12, 2024</a>
-            </blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-            
-            <h2>Back to Homepage</h2>
-            <p>Click here to return to Tweets page</p>
-            <a href="index.html">Go back to Homepage</a>
-            
-            <h3>HTML TAGS</h3>
-            <p>HTML tags are structural components enclosed in angle brackets.</p>
-            
-            <h3>HTML TAGS</h3>
-            <p>HTML tags are structural components enclosed in angle brackets.</p>
-            
-            <h2>Clickable image example</h2>
-            <p>Click the image below.</p>
-            <a href="https://www.google.com" target="_blank">
-                <img src="img/myimage.jpg" alt="Google img">
-            </a>
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="base_index.html">Base_index</a></li>
+                    <li><a href="tweets.html">Tweets</a></li>
+                </ul>
+            </nav>
+        </header>
 
-        </article>
+        <main>
+            <h1>Welcome to My Webpage</h1>
+            <p>This webpage demonstrates the use of various HTML elements such as headings, paragraphs, and clickable images. HTML allows you to structure your content efficiently and add interactivity where needed. Below, you will find sections with subheadings and details to explore.</p>
 
-        <aside>
-            placeholder to add comment thread later.
-        </aside>
-
-        <footer>
-            <p> Made by MAYUNGBE TOLULOPE - <a href="https://www.google.com" target="_blank">here</a></p> 
-        </footer>
-        
-    </main>
+            <article>
+                <h2>About HTML</h2>
+                <p>HTML stands for HyperText Markup Language and is the standard markup language used to create web pages. It provides the structure of a webpage, while CSS and JavaScript handle its presentation and functionality. Understanding HTML is the first step towards becoming a web developer.</p>
     
+                <h2>Embedded Tweet</h2>
+                <p>
+                    Below is an example of an embedded tweet:
+                </p>
+                
+                <blockquote class="twitter-tweet">
+                    <p lang="en" dir="ltr">JUST IN!!<br><br>WAEC commences nationwide strike over minimum wage short-change today. <br><br>Threatens mother of all strikes tomorrow. <a href="https://t.co/eIoNfL5Mw6">pic.twitter.com/eIoNfL5Mw6</a></p>&mdash; 99% OPPRESSED. (@PIDOMNIGERIA) <a href="https://twitter.com/PIDOMNIGERIA/status/1866179750718292394?ref_src=twsrc%5Etfw">December 9, 2024</a>
+                </blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    
+                <h2>Back to Tweetpage</h2>
+                <p>If you'd like to return to the main Tweetpage, click the link below:</p>
+                <a href="tweets.html" class="back-home">Go to Tweetpage</a>
+    
+                <h2>Benefits of Learning HTML</h2>
+                <h3>Essential for Web Development</h3>
+                <p>HTML is the foundation of web development. Every webpage you interact with relies on HTML for its structure. Learning HTML is essential for creating web content, structuring layouts, and making your website accessible to users worldwide.</p>
+    
+                <h3>Enables Creativity</h3>
+                <p>By mastering HTML, you can express your creativity through website design. You can combine it with CSS for beautiful designs and JavaScript for interactive features, bringing your ideas to life on the web.</p>
+    
+                <h2>Clickable Image Example</h2>
+                <p>Click the image below to visit a popular search engine:</p>
+                <a href="https://www.google.com" target="_blank">
+                    <img src="img/myimage.jpg" alt="Google img">
+                </a>
+            </article>
+
+            <aside>
+                placeholder to add comment thread later.
+            </aside>
+        </main>
+        
+        <footer>
+            <p>Made by MAYUNGBE TOLULOPE - <a href="https://samuel-enyi-portfolo.netlify.app/" target="_blank">here</a>.</p>
+        </footer>
+
 </body>
 </html>
